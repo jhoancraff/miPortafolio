@@ -1,0 +1,156 @@
+body {
+    font-family:  sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+.header-img{
+    max-width: 8%;
+    height: 1%;
+    border-radius: 200px;
+}
+.stop-img{
+    
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: rotate 5s linear infinite;
+}
+.header-img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+    box-shadow: 0 0 20px rgba(224, 24, 24, 0.5); /* Añade un sombreado al pasar el ratón */
+}
+
+nav {
+    background-color: #444;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+    transition: 0.3s;
+}
+nav a:hover{
+    width: 100px;
+    color: aqua;
+    margin: 10px;
+}
+
+section {
+    padding: 2em;
+}
+
+.project {
+    border: 1px solid yellow;
+    border-radius: 10px;
+    
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+}
+#projects{
+    background-color: rgb(23, 179, 179);
+}
+#projects h2{
+    font-family: monospace;
+    text-align: center;
+}
+#about-me{
+    background-color: #333;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+#about-me  {
+    font-family: monospace;
+    font-size: 18px;
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+.about-me_show{
+    width: 50%;
+    border: solid 1px yellow;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #444;
+    margin: 0 auto;
+    color: white;
+    box-shadow: 5px 5px 10px 5px rgb(23, 179, 179);
+}
+
+#contact{
+    background-color: rgb(23, 179, 179);
+    padding: 40px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+  
+footer {
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/*funtions CSS*/
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slidein {
+    from {
+      margin-bottom: 100%;
+      width: 200%;
+      
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 1em;
+    }
+
+    .project {
+        margin: 1em 0;
+    }
+    .header-img{
+        max-width: 20%;
+        height: 1%;}
+    .about-me_show{
+        width: 100%;
+        
+    }
+}
