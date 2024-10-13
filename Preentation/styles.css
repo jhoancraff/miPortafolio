@@ -63,30 +63,103 @@ section {
     font-family: monospace;
     text-align: center;
 }
+
+.div-experiencia{
+    text-align: start;
+    border-bottom: 1px solid  rgb(23, 179, 179);
+    margin-bottom: 30px;
+    color: white;
+}
+.titulo-empresa{
+    width: 30%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgb(23, 179, 179) ;
+    color: black;
+    box-shadow: 10px 10px 10px black;
+}
+
 #about-me{
     background-color: #333;
     margin: 0 auto;
     text-align: center;
+    justify-content: right;
+}
+
+.contenido-salepoint{
+    display: flex;
+    margin: 10px;
     justify-content: center;
 }
 
-#about-me  {
-    font-family: monospace;
-    font-size: 18px;
-    animation-duration: 5s;
-    animation-name: slidein;
+.flip-container {
+    perspective: 1000px;
+    width: 300px;
+    height: 400px;
+    margin: 50px;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 20px;
+    
 }
 
-.about-me_show{
-    width: 50%;
-    border: solid 1px yellow;
-    border-radius: 10px;
-    text-align: center;
-    background-color: #444;
-    margin: 0 auto;
-    color: white;
-    box-shadow: 5px 5px 10px 5px rgb(23, 179, 179);
+.flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.6s;
+
 }
+
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+
+}
+
+.front h1{
+    margin-bottom: 50px;
+}
+
+.front {
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.front-mathtech-color{
+    background: linear-gradient(to right, #d9e6f8, #16073f);
+}
+
+.front-heno-color{
+    background: linear-gradient(to right, #ecc3b9, #feb47b);
+}
+
+.front-mathtech-color img {
+    width: 100%;
+    height: 75%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.front-heno-color img {
+    width: 100%;
+    height: 75%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.back {
+    background: linear-gradient(to bottom, #f1eeed, #feb47b);
+    transform: rotateY(180deg);
+    padding: 20px;
+}
+
 
 #contact{
     background-color: rgb(23, 179, 179);
