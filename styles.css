@@ -87,16 +87,12 @@ section {
     justify-content: right;
 }
 
-.contenido-salepoint{
+.contenido-salepoint, .contenido-newVision{
     display: flex;
     margin: 10px;
     justify-content: center;
 }
-.contenido-newVision{
-    display: flex;
-    margin: 10px;
-    justify-content: center;
-}
+
 .flip-container, .flip-container-group {
     perspective: 1000px;
     width: 300px;
@@ -109,7 +105,7 @@ section {
 
 .flip-container-group {
     font-family: monospace;
-    font-size: 26px;
+    font-size: 24px;
     width: 500px;
     height: 400px;
     margin: 50px;
@@ -144,31 +140,36 @@ section {
     margin-bottom: 50px;
 }
 
-.front {
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-}
+
 .front-mathtech-color{
     background: linear-gradient(to right, #d9e6f8, #16073f);
 }
-
-.front-heno-color{
-    background: linear-gradient(to right, #ecc3b9, #feb47b);
-}
-
 .front-mathtech-color img {
     width: 100%;
     height: 75%;
     border-radius: 0px 0px 20px 20px;
 }
 
+
+.front-heno-color{
+    background: linear-gradient(to right, #ecc3b9, #feb47b);
+}
 .front-heno-color img {
     width: 100%;
     height: 75%;
     border-radius: 0px 0px 20px 20px;
 }
 
+
+.front-vision-color{
+    background: linear-gradient(to right, #68e78e, #98baec);
+    border-radius: 20px 20px 20px 20px;
+}
+.front-vision-color img {
+    width: 100%;
+    height: 75%;
+    border-radius: 0px 0px 20px 20px;
+}
 .back {
     background: linear-gradient(to bottom, #f1eeed, #feb47b);
     transform: rotateY(180deg);
