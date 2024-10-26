@@ -15,9 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         showDetails('Project 3');
     });
 
-    function showDetails(projectName) {
-        alert('Details of ' + projectName);
-    }
+    
     img.addEventListener('click',function(){
     
         img.classList.toggle('stop-img')
