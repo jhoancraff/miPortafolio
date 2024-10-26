@@ -1,0 +1,33 @@
+body{
+    background: linear-gradient(to right, rgb(63, 15, 107), rgb(107, 33, 175) );
+    font-family:  sans-serif;
+    margin: 0;
+    padding: 0;
+    color: antiquewhite;
+    
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.contenido-calculadora{
+    border: solid rgb(211, 135, 241);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px white;
+    opacity: 0.7;
+    filter: alpha(opacity=20);      
+    zoom: 1; 
+    width: 50%;
+    color: aliceblue;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.contenido-cabezera{
+    text-align: end;
+    border-bottom: 1px solid wheat;
+    justify-content: right;
+    font-size: 26px;
+    padding: 10px;
+   
+}
