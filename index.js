@@ -6,11 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var img = document.querySelector('.header-img')
     var rotationAngle = 0;
 
-    // Add click event listeners
-    project1.addEventListener('click', function() {
-        showDetails('Project 1');
-    });
-
+    
     project2.addEventListener('click', function() {
         showDetails('Project 2');
     });
