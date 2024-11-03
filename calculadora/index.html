@@ -7,29 +7,51 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Calculadora</h1>
-    <a href="../index.html">Pagina principal</a>
+    <div class='contenido-titulo'>
+        <h1>Calculadora</h1>
+    </div>
+    
 
     <section id='seccion-calculadora'>
     
         <div class='contenido-calculadora'>
         
             <div class='contenido-cabezera'>
-            <p>0</p>
+            <p id='resultado'></p>
+            <p id='mostrar-problema'>0</p>
             </div>
             <div class='ingresar-elementos'>
                 <div class='signos'>
                     <div class='fila-signos'>
-                        <p>+</p>
-                        <p>-</p>
-                        <p>x</p>
-                        <p>/</p>
+                        <p onclick="alertPrueba('+')">+</p>
+                        <p onclick="alertPrueba('-')">-</p>
+                        <p onclick="alertPrueba('x')">x</p>
+                        <p onclick="alertPrueba('/')">/</p>
                     </div>
+                </div>
+                <div class='numeros'>
+                    
+                    <div class='filas-numeros'>
+                        <p onclick="alertPrueba(1)">1</p>
+                        <p class='valor2' onclick="alertPrueba(2)">2</p>
+                        <p class='valor3' onclick="alertPrueba(3)" >3</p>
+                        <p class='valor4' onclick="alertPrueba(4)">4</p>
+                        <p class='valor5' onclick="alertPrueba(5)">5</p>
+                        <p class='valor6' onclick="alertPrueba(6)">6</p>
+                        <p class='valor7' onclick="alertPrueba(7)">7</p>
+                        <p class='valor8' onclick="alertPrueba(8)">8</p>
+                        <p class='valor9' onclick="alertPrueba(9)">9</p>
+                        <p class='valor0' onclick="alertPrueba(0)">0</p>
+                    </div>
+                    
+                
                 </div>
             </div>
         
         </div>
+        <a class='pagina-principal' href="../index.html">Pagina principal</a>
     
     </section>
+    <script src="./script.js"></script>
 </body>
 </html>
